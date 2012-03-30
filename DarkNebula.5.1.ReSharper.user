@@ -1,0 +1,176 @@
+<Configuration>
+  <SettingsComponent>
+    <string />
+    <integer />
+    <boolean>
+      <setting name="SolutionAnalysisEnabled">False</setting>
+    </boolean>
+  </SettingsComponent>
+  <RecentFiles>
+    <RecentFiles>
+      <File id="E850B0FC-9700-4E31-B1E1-9A295C7927B0/d:Views/f:Web.config" caret="0" fromTop="0" />
+      <File id="E850B0FC-9700-4E31-B1E1-9A295C7927B0/d:Views/d:Shared/f:_LoginPartial.cshtml" caret="0" fromTop="0" />
+      <File id="E850B0FC-9700-4E31-B1E1-9A295C7927B0/f:Global.asax.cs" caret="719" fromTop="24" />
+      <File id="E850B0FC-9700-4E31-B1E1-9A295C7927B0/d:Scripts/f:_references.js" caret="36" fromTop="0" />
+      <File id="E850B0FC-9700-4E31-B1E1-9A295C7927B0/d:Scripts/f:knockout-2.0.0.js" caret="1982" fromTop="37" />
+      <File id="E850B0FC-9700-4E31-B1E1-9A295C7927B0/d:Models/f:Order.cs" caret="0" fromTop="0" />
+      <File id="E850B0FC-9700-4E31-B1E1-9A295C7927B0/d:Models/f:Service.cs" caret="118" fromTop="5" />
+      <File id="E850B0FC-9700-4E31-B1E1-9A295C7927B0/d:Models/f:Project.cs" caret="0" fromTop="0" />
+      <File id="E850B0FC-9700-4E31-B1E1-9A295C7927B0/d:Models/f:Job.cs" caret="0" fromTop="0" />
+      <File id="E850B0FC-9700-4E31-B1E1-9A295C7927B0/d:Models/f:Memo.cs" caret="0" fromTop="0" />
+      <File id="E850B0FC-9700-4E31-B1E1-9A295C7927B0/d:Models/f:Rma.cs" caret="0" fromTop="0" />
+      <File id="E850B0FC-9700-4E31-B1E1-9A295C7927B0/d:Models/f:Receipt.cs" caret="0" fromTop="0" />
+      <File id="E850B0FC-9700-4E31-B1E1-9A295C7927B0/d:Models/f:Customer.cs" caret="0" fromTop="0" />
+      <File id="E850B0FC-9700-4E31-B1E1-9A295C7927B0/d:Models/f:Contact.cs" caret="0" fromTop="0" />
+      <File id="E850B0FC-9700-4E31-B1E1-9A295C7927B0/d:Models/f:Contract.cs" caret="0" fromTop="0" />
+      <File id="E850B0FC-9700-4E31-B1E1-9A295C7927B0/d:Models/f:Quote.cs" caret="0" fromTop="0" />
+      <File id="E850B0FC-9700-4E31-B1E1-9A295C7927B0/d:Models/f:Invoice.cs" caret="154" fromTop="8" />
+      <File id="A35C112B-9798-4CD6-87C3-1061AF727D04/f:Class1.cs" caret="169" fromTop="9" />
+      <File id="2E1C28E3-290C-4F3B-9AB2-04C79A8E8DDC/f:Class1.cs" caret="0" fromTop="0" />
+      <File id="E850B0FC-9700-4E31-B1E1-9A295C7927B0/d:Models/f:Purchase.cs" caret="165" fromTop="10" />
+      <File id="E850B0FC-9700-4E31-B1E1-9A295C7927B0/d:Models/f:AccountModels.cs" caret="210" fromTop="9" />
+      <File id="E850B0FC-9700-4E31-B1E1-9A295C7927B0/d:Controllers/f:HomeController.cs" caret="709" fromTop="21" />
+      <File id="E850B0FC-9700-4E31-B1E1-9A295C7927B0/d:Models/f:Weather.cs" caret="209" fromTop="10" />
+      <File id="E850B0FC-9700-4E31-B1E1-9A295C7927B0/d:Content/f:ie.css" caret="678" fromTop="25" />
+      <File id="E850B0FC-9700-4E31-B1E1-9A295C7927B0/d:Scripts/f:jquery.tmpl.js" caret="0" fromTop="0" />
+      <File id="E850B0FC-9700-4E31-B1E1-9A295C7927B0/d:Content/f:reset.css" caret="2256" fromTop="60" />
+      <File id="E850B0FC-9700-4E31-B1E1-9A295C7927B0/d:Content/f:desktop.css" caret="2124" fromTop="27" />
+      <File id="E850B0FC-9700-4E31-B1E1-9A295C7927B0/d:Views/d:Shared/f:_Layout.cshtml" caret="8788" fromTop="16" />
+      <File id="E850B0FC-9700-4E31-B1E1-9A295C7927B0/d:Views/d:Home/f:Index.cshtml" caret="540" fromTop="21" />
+      <File id="E850B0FC-9700-4E31-B1E1-9A295C7927B0/d:Scripts/f:jquery.desktop.js" caret="5349" fromTop="34" />
+    </RecentFiles>
+    <RecentEdits>
+      <File id="E850B0FC-9700-4E31-B1E1-9A295C7927B0/d:Scripts/f:jquery.desktop.js" caret="127" fromTop="5" />
+      <File id="E850B0FC-9700-4E31-B1E1-9A295C7927B0/d:Views/d:Shared/f:_Layout.cshtml" caret="8759" fromTop="30" />
+      <File id="E850B0FC-9700-4E31-B1E1-9A295C7927B0/d:Views/d:Shared/f:_Layout.cshtml" caret="8759" fromTop="24" />
+      <File id="E850B0FC-9700-4E31-B1E1-9A295C7927B0/d:Views/d:Shared/f:_Layout.cshtml" caret="8759" fromTop="21" />
+      <File id="E850B0FC-9700-4E31-B1E1-9A295C7927B0/d:Views/d:Shared/f:_Layout.cshtml" caret="8759" fromTop="16" />
+      <File id="E850B0FC-9700-4E31-B1E1-9A295C7927B0/d:Views/d:Shared/f:_Layout.cshtml" caret="8759" fromTop="11" />
+      <File id="E850B0FC-9700-4E31-B1E1-9A295C7927B0/d:Views/d:Shared/f:_Layout.cshtml" caret="8759" fromTop="6" />
+      <File id="E850B0FC-9700-4E31-B1E1-9A295C7927B0/d:Views/d:Shared/f:_Layout.cshtml" caret="8759" fromTop="6" />
+      <File id="E850B0FC-9700-4E31-B1E1-9A295C7927B0/d:Views/d:Shared/f:_Layout.cshtml" caret="8759" fromTop="11" />
+      <File id="E850B0FC-9700-4E31-B1E1-9A295C7927B0/d:Views/d:Shared/f:_Layout.cshtml" caret="8759" fromTop="6" />
+      <File id="E850B0FC-9700-4E31-B1E1-9A295C7927B0/d:Views/d:Shared/f:_Layout.cshtml" caret="239" fromTop="6" />
+      <File id="E850B0FC-9700-4E31-B1E1-9A295C7927B0/d:Views/d:Shared/f:_Layout.cshtml" caret="420" fromTop="11" />
+      <File id="E850B0FC-9700-4E31-B1E1-9A295C7927B0/d:Views/d:Shared/f:_Layout.cshtml" caret="828" fromTop="18" />
+      <File id="E850B0FC-9700-4E31-B1E1-9A295C7927B0/d:Views/d:Shared/f:_Layout.cshtml" caret="1119" fromTop="18" />
+      <File id="E850B0FC-9700-4E31-B1E1-9A295C7927B0/d:Views/d:Shared/f:_Layout.cshtml" caret="1779" fromTop="5" />
+      <File id="E850B0FC-9700-4E31-B1E1-9A295C7927B0/d:Views/d:Shared/f:_Layout.cshtml" caret="1779" fromTop="10" />
+      <File id="E850B0FC-9700-4E31-B1E1-9A295C7927B0/d:Views/d:Shared/f:_Layout.cshtml" caret="1698" fromTop="18" />
+      <File id="E850B0FC-9700-4E31-B1E1-9A295C7927B0/d:Views/d:Shared/f:_Layout.cshtml" caret="2037" fromTop="22" />
+      <File id="E850B0FC-9700-4E31-B1E1-9A295C7927B0/d:Views/d:Shared/f:_Layout.cshtml" caret="2445" fromTop="20" />
+      <File id="E850B0FC-9700-4E31-B1E1-9A295C7927B0/d:Views/d:Shared/f:_Layout.cshtml" caret="6344" fromTop="57" />
+      <File id="E850B0FC-9700-4E31-B1E1-9A295C7927B0/d:Views/d:Shared/f:_Layout.cshtml" caret="1375" fromTop="21" />
+      <File id="E850B0FC-9700-4E31-B1E1-9A295C7927B0/d:Views/d:Shared/f:_Layout.cshtml" caret="7881" fromTop="27" />
+      <File id="E850B0FC-9700-4E31-B1E1-9A295C7927B0/d:Views/d:Shared/f:_Layout.cshtml" caret="7626" fromTop="21" />
+      <File id="E850B0FC-9700-4E31-B1E1-9A295C7927B0/d:Views/d:Shared/f:_Layout.cshtml" caret="7405" fromTop="15" />
+      <File id="E850B0FC-9700-4E31-B1E1-9A295C7927B0/d:Views/d:Shared/f:_Layout.cshtml" caret="7164" fromTop="15" />
+      <File id="E850B0FC-9700-4E31-B1E1-9A295C7927B0/d:Views/d:Shared/f:_Layout.cshtml" caret="6946" fromTop="9" />
+      <File id="E850B0FC-9700-4E31-B1E1-9A295C7927B0/d:Views/d:Shared/f:_Layout.cshtml" caret="6725" fromTop="11" />
+      <File id="E850B0FC-9700-4E31-B1E1-9A295C7927B0/d:Views/d:Shared/f:_Layout.cshtml" caret="6526" fromTop="15" />
+      <File id="E850B0FC-9700-4E31-B1E1-9A295C7927B0/d:Views/d:Shared/f:_Layout.cshtml" caret="8550" fromTop="34" />
+      <File id="E850B0FC-9700-4E31-B1E1-9A295C7927B0/d:Scripts/f:jquery.desktop.js" caret="5349" fromTop="34" />
+    </RecentEdits>
+  </RecentFiles>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <UnitTestRunner>
+    <Providers />
+  </UnitTestRunner>
+  <UnitTestRunnerNUnit>
+    <NUnitInstallDir>C:\Program Files (x86)\NUnit 2.6\bin\net-2.0\</NUnitInstallDir>
+    <UseAddins>Never</UseAddins>
+  </UnitTestRunnerNUnit>
+  <CompletionStatisticsManager>
+    <ItemStatistics item="Default">
+      <Item value="using" priority="1" />
+      <Item value="var" priority="6" />
+      <Item value="string" priority="3" />
+      <Item value="client" priority="2" />
+      <Item value="new" priority="16" />
+      <Item value="prop" priority="3" />
+      <Item value="DateTime`0" priority="1" />
+      <Item value="public" priority="2" />
+      <Item value="serializer" priority="0" />
+      <Item value="Weather`0" priority="5" />
+      <Item value="Xml" priority="1" />
+      <Item value="Serialization" priority="1" />
+      <Item value="XmlElement" priority="0" />
+      <Item value="Serializable" priority="0" />
+      <Item value="System" priority="0" />
+      <Item value="XmlRoot" priority="0" />
+      <Item value="class" priority="0" />
+      <Item value="XmlArray`0" priority="0" />
+      <Item value="typeof" priority="2" />
+      <Item value="XmlSerializer" priority="1" />
+      <Item value="StreamReader" priority="1" />
+      <Item value="XmlReader`0" priority="2" />
+      <Item value="WebClient`0" priority="1" />
+      <Item value="StreamReader`0" priority="0" />
+      <Item value="Weather" priority="1" />
+      <Item value="XmlSerializer`0" priority="1" />
+      <Item value="ser" priority="0" />
+      <Item value="reader" priority="0" />
+      <Item value="StreamWriter`0" priority="0" />
+      <Item value="StreamWriter" priority="0" />
+      <Item value="c" priority="3" />
+      <Item value="StringReader`0" priority="2" />
+      <Item value="StringReader" priority="0" />
+      <Item value="TextReader`0" priority="1" />
+      <Item value="sReader" priority="0" />
+      <Item value="tReader" priority="1" />
+      <Item value="XmlDocument`0" priority="0" />
+      <Item value="XmlDocument" priority="0" />
+      <Item value="doc" priority="2" />
+      <Item value="XmlElement`0" priority="0" />
+      <Item value="XElement`0" priority="0" />
+      <Item value="XDocument`0" priority="4" />
+      <Item value="XDocument" priority="0" />
+      <Item value="xDoc" priority="0" />
+      <Item value="from" priority="2" />
+      <Item value="IEnumerable" priority="0" />
+      <Item value="x" priority="1" />
+      <Item value="select" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Net.WebClient">
+      <Item value="DownloadString`0" priority="3" />
+      <Item value="Encoding" priority="0" />
+      <Item value="DownloadData`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Web.Script.Serialization.JavaScriptSerializer">
+      <Item value="Deserialize`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Xml.XmlReader">
+      <Item value="Create`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Xml.Serialization.XmlSerializer">
+      <Item value="Deserialize`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.IO.StreamReader">
+      <Item value="Close`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.IO.StringReader">
+      <Item value="Read`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Xml.XmlDocument">
+      <Item value="CreateComment`0" priority="0" />
+      <Item value="LoadXml`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Xml.Linq.XElement">
+      <Item value="Load`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Xml.Linq.XDocument">
+      <Item value="Load`0" priority="1" />
+      <Item value="Parse`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Xml.Linq.XDocument">
+      <Item value="Descendants`0" priority="0" />
+      <Item value="Elements`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Xml.Linq.XElement">
+      <Item value="Element`0" priority="1" />
+      <Item value="Descendants`0" priority="0" />
+    </ItemStatistics>
+  </CompletionStatisticsManager>
+</Configuration>

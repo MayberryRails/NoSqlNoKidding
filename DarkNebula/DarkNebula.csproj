@@ -1,0 +1,676 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E850B0FC-9700-4E31-B1E1-9A295C7927B0}</ProjectGuid>
+    <ProjectTypeGuids>{E3E379DF-F4C6-4180-9B81-6769533ABE47};{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DarkNebula</RootNamespace>
+    <AssemblyName>DarkNebula</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>false</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AsyncCtpLibrary">
+      <HintPath>..\packages\RavenDB-Embedded.1.0.701\lib\net40\AsyncCtpLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="Bootstrapper">
+      <HintPath>..\packages\Bootstrapper.2.0.2.0\lib\Bootstrapper.dll</HintPath>
+    </Reference>
+    <Reference Include="Bootstrapper.StructureMap">
+      <HintPath>..\packages\Bootstrapper.StructureMap.2.0.2.0\lib\Bootstrapper.StructureMap.dll</HintPath>
+    </Reference>
+    <Reference Include="BouncyCastle.Crypto">
+      <HintPath>..\packages\RavenDB-Embedded.1.0.701\lib\net40\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.4.1.10331.0\lib\net40\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Esent.Interop">
+      <HintPath>..\packages\RavenDB-Embedded.1.0.701\lib\net40\Esent.Interop.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.NRefactory">
+      <HintPath>..\packages\RavenDB-Embedded.1.0.701\lib\net40\ICSharpCode.NRefactory.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\packages\log4net.1.2.10\lib\2.0\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Lucene.Net">
+      <HintPath>..\packages\RavenDB-Embedded.1.0.701\lib\net40\Lucene.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="Lucene.Net.Contrib.Spatial">
+      <HintPath>..\packages\RavenDB-Embedded.1.0.701\lib\net40\Lucene.Net.Contrib.Spatial.dll</HintPath>
+    </Reference>
+    <Reference Include="Lucene.Net.Contrib.SpellChecker">
+      <HintPath>..\packages\RavenDB-Embedded.1.0.701\lib\net40\Lucene.Net.Contrib.SpellChecker.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Practices.ServiceLocation">
+      <HintPath>..\packages\CommonServiceLocator.1.0\lib\NET35\Microsoft.Practices.ServiceLocation.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.4.0.8\lib\net40\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="NLog">
+      <HintPath>..\packages\NLog.2.0.0.2000\lib\net40\NLog.dll</HintPath>
+    </Reference>
+    <Reference Include="NServiceBus">
+      <HintPath>..\packages\NServiceBus.3.0.0\lib\net40\NServiceBus.dll</HintPath>
+    </Reference>
+    <Reference Include="NServiceBus.Core">
+      <HintPath>..\packages\NServiceBus.3.0.0\lib\net40\NServiceBus.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="NSpec">
+      <HintPath>..\packages\nspec.0.9.59\lib\NSpec.dll</HintPath>
+    </Reference>
+    <Reference Include="Raven.Abstractions">
+      <HintPath>..\packages\RavenDB-Embedded.1.0.701\lib\net40\Raven.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Raven.Client.Embedded">
+      <HintPath>..\packages\RavenDB-Embedded.1.0.701\lib\net40\Raven.Client.Embedded.dll</HintPath>
+    </Reference>
+    <Reference Include="Raven.Client.Lightweight">
+      <HintPath>..\packages\RavenDB-Embedded.1.0.701\lib\net40\Raven.Client.Lightweight.dll</HintPath>
+    </Reference>
+    <Reference Include="Raven.Client.MvcIntegration">
+      <HintPath>..\packages\RavenDB-Embedded.1.0.701\lib\net40\Raven.Client.MvcIntegration.dll</HintPath>
+    </Reference>
+    <Reference Include="Raven.Database">
+      <HintPath>..\packages\RavenDB-Embedded.1.0.701\lib\net40\Raven.Database.dll</HintPath>
+    </Reference>
+    <Reference Include="Raven.Munin">
+      <HintPath>..\packages\RavenDB-Embedded.1.0.701\lib\net40\Raven.Munin.dll</HintPath>
+    </Reference>
+    <Reference Include="Raven.Storage.Esent">
+      <HintPath>..\packages\RavenDB-Embedded.1.0.701\lib\net40\Raven.Storage.Esent.dll</HintPath>
+    </Reference>
+    <Reference Include="Raven.Storage.Managed">
+      <HintPath>..\packages\RavenDB-Embedded.1.0.701\lib\net40\Raven.Storage.Managed.dll</HintPath>
+    </Reference>
+    <Reference Include="Rhino.Mocks">
+      <HintPath>..\packages\RhinoMocks.3.6.1\lib\net\Rhino.Mocks.dll</HintPath>
+    </Reference>
+    <Reference Include="StructureMap">
+      <HintPath>..\packages\structuremap.2.6.3\lib\StructureMap.dll</HintPath>
+    </Reference>
+    <Reference Include="StructureMapAdapter">
+      <HintPath>..\packages\CommonServiceLocator.StructureMapAdapter.1.1.0.3\lib\StructureMapAdapter.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Json, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\System.Json.4.0.20126.16343\lib\net40\System.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\System.Net.Http.2.0.20126.16343\lib\net40\System.Net.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Formatting, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\System.Net.Http.Formatting.4.0.20126.16343\lib\net40\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\System.Net.Http.2.0.20126.16343\lib\net40\System.Net.Http.WebRequest.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Helpers, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\AspNetWebPages.Core.2.0.20126.16343\lib\net40\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\AspNetWebApi.Core.4.0.20126.16343\lib\net40\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.Common, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\System.Web.Http.Common.4.0.20126.16343\lib\net40\System.Web.Http.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\AspNetWebApi.4.0.20126.16343\lib\net40\System.Web.Http.WebHost.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\AspNetMvc.4.0.20126.16343\lib\net40\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization">
+      <HintPath>..\packages\Microsoft.Web.Optimization.1.0.0-beta\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Providers">
+      <HintPath>..\packages\System.Web.Providers.Core.1.0\lib\net40\System.Web.Providers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\AspNetRazor.Core.2.0.20126.16343\lib\net40\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\AspNetWebPages.Core.2.0.20126.16343\lib\net40\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\AspNetWebPages.Core.2.0.20126.16343\lib\net40\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\AspNetWebPages.Core.2.0.20126.16343\lib\net40\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="WebActivator">
+      <HintPath>..\packages\WebActivator.1.4.4\lib\net40\WebActivator.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\StructuremapMvc.cs" />
+    <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="DebuggerShim.cs" />
+    <Compile Include="DependencyResolution\IoC.cs" />
+    <Compile Include="DependencyResolution\SmDependencyResolver.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AccountModels.cs" />
+    <Compile Include="Models\Contact.cs" />
+    <Compile Include="Models\Contract.cs" />
+    <Compile Include="Models\Customer.cs" />
+    <Compile Include="Models\Invoice.cs" />
+    <Compile Include="Models\Job.cs" />
+    <Compile Include="Models\Memo.cs" />
+    <Compile Include="Models\Order.cs" />
+    <Compile Include="Models\Project.cs" />
+    <Compile Include="Models\Purchase.cs" />
+    <Compile Include="Models\Quote.cs" />
+    <Compile Include="Models\Receipt.cs" />
+    <Compile Include="Models\Rma.cs" />
+    <Compile Include="Models\Service.cs" />
+    <Compile Include="Models\Weather.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\desktop.css" />
+    <Content Include="Content\ie.css" />
+    <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="Content\themes\base\images\ui-icons_222222_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_454545_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_888888_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Content\themes\base\jquery.ui.accordion.css" />
+    <Content Include="Content\themes\base\jquery.ui.all.css" />
+    <Content Include="Content\themes\base\jquery.ui.autocomplete.css" />
+    <Content Include="Content\themes\base\jquery.ui.base.css" />
+    <Content Include="Content\themes\base\jquery.ui.button.css" />
+    <Content Include="Content\themes\base\jquery.ui.core.css" />
+    <Content Include="Content\themes\base\jquery.ui.datepicker.css" />
+    <Content Include="Content\themes\base\jquery.ui.dialog.css" />
+    <Content Include="Content\themes\base\jquery.ui.progressbar.css" />
+    <Content Include="Content\themes\base\jquery.ui.resizable.css" />
+    <Content Include="Content\themes\base\jquery.ui.selectable.css" />
+    <Content Include="Content\themes\base\jquery.ui.slider.css" />
+    <Content Include="Content\themes\base\jquery.ui.tabs.css" />
+    <Content Include="Content\themes\base\jquery.ui.theme.css" />
+    <Content Include="favicon.ico" />
+    <Content Include="Global.asax" />
+    <Content Include="Images\16x16 icons\accounts_payable.gif" />
+    <Content Include="Images\16x16 icons\accounts_receivable.gif" />
+    <Content Include="Images\16x16 icons\adjustments.gif" />
+    <Content Include="Images\16x16 icons\bank_accounts.gif" />
+    <Content Include="Images\16x16 icons\bank_transactions.gif" />
+    <Content Include="Images\16x16 icons\book.gif" />
+    <Content Include="Images\16x16 icons\budgets.gif" />
+    <Content Include="Images\16x16 icons\cash_receipt.gif" />
+    <Content Include="Images\16x16 icons\chart_of_accounts.gif" />
+    <Content Include="Images\16x16 icons\check.gif" />
+    <Content Include="Images\16x16 icons\contract.gif" />
+    <Content Include="Images\16x16 icons\credit_memo.gif" />
+    <Content Include="Images\16x16 icons\CRM.gif" />
+    <Content Include="Images\16x16 icons\customers.gif" />
+    <Content Include="Images\16x16 icons\dates.gif" />
+    <Content Include="Images\16x16 icons\debit_memo.gif" />
+    <Content Include="Images\16x16 icons\delete.gif" />
+    <Content Include="Images\16x16 icons\deposit.gif" />
+    <Content Include="Images\16x16 icons\edit.gif" />
+    <Content Include="Images\16x16 icons\employees.gif" />
+    <Content Include="Images\16x16 icons\employee_setup.gif" />
+    <Content Include="Images\16x16 icons\enter_view.gif" />
+    <Content Include="Images\16x16 icons\enter_view_leads.gif" />
+    <Content Include="Images\16x16 icons\financial_reports.gif" />
+    <Content Include="Images\16x16 icons\fixed_assets.gif" />
+    <Content Include="Images\16x16 icons\general_ledger.gif" />
+    <Content Include="Images\16x16 icons\headings.gif" />
+    <Content Include="Images\16x16 icons\help_desk.gif" />
+    <Content Include="Images\16x16 icons\inventory.gif" />
+    <Content Include="Images\16x16 icons\inventory_adjustments.gif" />
+    <Content Include="Images\16x16 icons\inventory_assembly.gif" />
+    <Content Include="Images\16x16 icons\inventory_transfers.gif" />
+    <Content Include="Images\16x16 icons\invoice.gif" />
+    <Content Include="Images\16x16 icons\item.gif" />
+    <Content Include="Images\16x16 icons\leads.gif" />
+    <Content Include="Images\16x16 icons\leads_maintenance.gif" />
+    <Content Include="Images\16x16 icons\ledger_transactions.gif" />
+    <Content Include="Images\16x16 icons\memorize_memorized.gif" />
+    <Content Include="Images\16x16 icons\news.gif" />
+    <Content Include="Images\16x16 icons\order.gif" />
+    <Content Include="Images\16x16 icons\packing_slip.gif" />
+    <Content Include="Images\16x16 icons\payment.gif" />
+    <Content Include="Images\16x16 icons\payroll.gif" />
+    <Content Include="Images\16x16 icons\people.gif" />
+    <Content Include="Images\16x16 icons\pick_list.gif" />
+    <Content Include="Images\16x16 icons\post.gif" />
+    <Content Include="Images\16x16 icons\problems.gif" />
+    <Content Include="Images\16x16 icons\process_payroll.gif" />
+    <Content Include="Images\16x16 icons\purchase_order.gif" />
+    <Content Include="Images\16x16 icons\quote.gif" />
+    <Content Include="Images\16x16 icons\receiving.gif" />
+    <Content Include="Images\16x16 icons\reporting_engine.gif" />
+    <Content Include="Images\16x16 icons\reports.gif" />
+    <Content Include="Images\16x16 icons\return.gif" />
+    <Content Include="Images\16x16 icons\return_authorization.gif" />
+    <Content Include="Images\16x16 icons\search.gif" />
+    <Content Include="Images\16x16 icons\service_invoice.gif" />
+    <Content Include="Images\16x16 icons\service_order.gif" />
+    <Content Include="Images\16x16 icons\setup.gif" />
+    <Content Include="Images\16x16 icons\shipping.gif" />
+    <Content Include="Images\16x16 icons\support.gif" />
+    <Content Include="Images\16x16 icons\tax_tables.gif" />
+    <Content Include="Images\16x16 icons\topics.gif" />
+    <Content Include="Images\16x16 icons\un-book.gif" />
+    <Content Include="Images\16x16 icons\un-post.gif" />
+    <Content Include="Images\16x16 icons\vendors.gif" />
+    <Content Include="Images\16x16 icons\vendor_adjustments.gif" />
+    <Content Include="Images\16x16 icons\view.gif" />
+    <Content Include="Images\16x16 icons\voucher.gif" />
+    <Content Include="Images\16x16 icons\warehouse.gif" />
+    <Content Include="Images\16x16 icons\withdrawl.gif" />
+    <Content Include="Images\accounts_payable.gif" />
+    <Content Include="Images\accounts_receivable.gif" />
+    <Content Include="Images\adjustments.gif" />
+    <Content Include="Images\Aqua Icons\AVX_ICONS INCOMING FOLDER.png" />
+    <Content Include="Images\Aqua Icons\AVX_ICONS OUTGOING FOLDER.png" />
+    <Content Include="Images\Aqua Icons\COM FOLDER.png" />
+    <Content Include="Images\Aqua Icons\CONTACTS.png" />
+    <Content Include="Images\Aqua Icons\DOC FOLDER.png" />
+    <Content Include="Images\Aqua Icons\DOCS BLACK.png" />
+    <Content Include="Images\Aqua Icons\DOCS BROWN.png" />
+    <Content Include="Images\Aqua Icons\FOLDER BLACK.png" />
+    <Content Include="Images\Aqua Icons\FOLDER BLUE.png" />
+    <Content Include="Images\Aqua Icons\FOLDER GREEN.png" />
+    <Content Include="Images\Aqua Icons\FOLDER ORANGE.png" />
+    <Content Include="Images\Aqua Icons\FOLDER RED.png" />
+    <Content Include="Images\Aqua Icons\FOLDER YELLOW.png" />
+    <Content Include="Images\Aqua Icons\FOLDER.png" />
+    <Content Include="Images\Aqua Icons\FOLDER2.png" />
+    <Content Include="Images\Aqua Icons\FOLDER3.png" />
+    <Content Include="Images\Aqua Icons\FOLDER4.png" />
+    <Content Include="Images\Aqua Icons\FOLDER5.png" />
+    <Content Include="Images\Aqua Icons\Home.png" />
+    <Content Include="Images\Aqua Icons\INCOMING FOLDER.png" />
+    <Content Include="Images\Aqua Icons\Incoming.png" />
+    <Content Include="Images\Aqua Icons\OUTGOING FOLDER.png" />
+    <Content Include="Images\Aqua Icons\Outgoing.png" />
+    <Content Include="Images\Aqua Icons\Settings.png" />
+    <Content Include="Images\Aqua Icons\todo.png" />
+    <Content Include="Images\Aqua Icons\Tools.png" />
+    <Content Include="Images\Aqua Icons\trash_empty.png" />
+    <Content Include="Images\Aqua Icons\trash_full.png" />
+    <Content Include="Images\Aqua Icons\Users.png" />
+    <Content Include="Images\Aqua Icons\UsersFolder.png" />
+    <Content Include="Images\bank_accounts.gif" />
+    <Content Include="Images\bank_transactions.gif" />
+    <Content Include="Images\book.gif" />
+    <Content Include="Images\budgets.gif" />
+    <Content Include="Images\cash_receipt.gif" />
+    <Content Include="Images\chart_of_accounts.gif" />
+    <Content Include="Images\check.gif" />
+    <Content Include="Images\Cobalt\LaST %28Cobalt%29 Find.png" />
+    <Content Include="Images\Cobalt\LaST %28Cobalt%29 Floppy.png" />
+    <Content Include="Images\Cobalt\LaST %28Cobalt%29 Help.png" />
+    <Content Include="Images\Cobalt\LaST %28Cobalt%29 Home Folder.png" />
+    <Content Include="Images\Cobalt\LaST %28Cobalt%29 Home.png" />
+    <Content Include="Images\Cobalt\LaST %28Cobalt%29 INF-INI File.png" />
+    <Content Include="Images\Cobalt\LaST %28Cobalt%29 Info Folder.png" />
+    <Content Include="Images\Cobalt\LaST %28Cobalt%29 Internal Disk.png" />
+    <Content Include="Images\Cobalt\LaST %28Cobalt%29 Internet File.png" />
+    <Content Include="Images\Cobalt\LaST %28Cobalt%29 Internet.png" />
+    <Content Include="Images\Cobalt\LaST %28Cobalt%29 Library Folder.png" />
+    <Content Include="Images\Cobalt\LaST %28Cobalt%29 Lock n Gear.png" />
+    <Content Include="Images\Cobalt\LaST %28Cobalt%29 My Computer.png" />
+    <Content Include="Images\Cobalt\LaST %28Cobalt%29 My Network.png" />
+    <Content Include="Images\Cobalt\LaST %28Cobalt%29 Network Services.png" />
+    <Content Include="Images\Cobalt\LaST %28Cobalt%29 OD Clock.png" />
+    <Content Include="Images\Cobalt\LaST %28Cobalt%29 Printers.png" />
+    <Content Include="Images\Cobalt\LaST %28Cobalt%29 Run.png" />
+    <Content Include="Images\Cobalt\LaST %28Cobalt%29 System Folder.png" />
+    <Content Include="Images\Cobalt\LaST %28Cobalt%29 Text File.png" />
+    <Content Include="Images\Cobalt\LaST %28Cobalt%29 Trash Full.png" />
+    <Content Include="Images\Cobalt\LaST %28Cobalt%29 Trash.png" />
+    <Content Include="Images\Cobalt\LaST %28Cobalt%29 Users Folder.png" />
+    <Content Include="Images\Cobalt\LaST %28Cobalt%29 Web Folder.png" />
+    <Content Include="Images\Cobalt\Payables.png" />
+    <Content Include="Images\Cobalt\Receivables.png" />
+    <Content Include="Images\contract.gif" />
+    <Content Include="Images\credit_memo.gif" />
+    <Content Include="Images\CRM.gif" />
+    <Content Include="Images\Custom Icons\AccountsPayable.png" />
+    <Content Include="Images\Custom Icons\AccountsReceivable.png" />
+    <Content Include="Images\customers.gif" />
+    <Content Include="Images\dates.gif" />
+    <Content Include="Images\debit_memo.gif" />
+    <Content Include="Images\delete.gif" />
+    <Content Include="Images\deposit.gif" />
+    <Content Include="Images\Desktop.png" />
+    <Content Include="Images\Desktop_small.png" />
+    <Content Include="Images\edit.gif" />
+    <Content Include="Images\employees.gif" />
+    <Content Include="Images\employee_setup.gif" />
+    <Content Include="Images\enter_view.gif" />
+    <Content Include="Images\enter_view_leads.gif" />
+    <Content Include="Images\financial_reports.gif" />
+    <Content Include="Images\fixed_assets.gif" />
+    <Content Include="Images\general_ledger.gif" />
+    <Content Include="Images\gui\bar_bottom.png" />
+    <Content Include="Images\gui\bar_top.png" />
+    <Content Include="Images\gui\bar_top_link.png" />
+    <Content Include="Images\gui\trans_black.png" />
+    <Content Include="Images\gui\trans_white.png" />
+    <Content Include="Images\gui\window_buttons.gif" />
+    <Content Include="Images\gui\window_content.gif" />
+    <Content Include="Images\gui\window_corner.gif" />
+    <Content Include="Images\headings.gif" />
+    <Content Include="Images\help_desk.gif" />
+    <Content Include="Images\Home.png" />
+    <Content Include="Images\icon_16_computer.png" />
+    <Content Include="Images\icon_16_disc.png" />
+    <Content Include="Images\icon_16_documents.png" />
+    <Content Include="Images\icon_16_drive.png" />
+    <Content Include="Images\icon_16_folder.png" />
+    <Content Include="Images\icon_16_folder_home.png" />
+    <Content Include="Images\icon_16_folder_remote.png" />
+    <Content Include="Images\icon_16_music.png" />
+    <Content Include="Images\icon_16_network.png" />
+    <Content Include="Images\icon_16_page.png" />
+    <Content Include="Images\icon_16_photo.png" />
+    <Content Include="Images\icon_16_server.png" />
+    <Content Include="Images\icon_16_system.png" />
+    <Content Include="Images\icon_16_trash.png" />
+    <Content Include="Images\icon_16_vpn.png" />
+    <Content Include="Images\icon_22_computer.png" />
+    <Content Include="Images\icon_22_desktop.png" />
+    <Content Include="Images\icon_22_disc.png" />
+    <Content Include="Images\icon_22_drive.png" />
+    <Content Include="Images\icon_22_network.png" />
+    <Content Include="Images\icon_22_recycle.png" />
+    <Content Include="Images\icon_32_computer.png" />
+    <Content Include="Images\icon_32_disc.png" />
+    <Content Include="Images\icon_32_drive.png" />
+    <Content Include="Images\icon_32_network.png" />
+    <Content Include="Images\inventory.gif" />
+    <Content Include="Images\inventory_adjustments.gif" />
+    <Content Include="Images\inventory_assembly.gif" />
+    <Content Include="Images\inventory_transfers.gif" />
+    <Content Include="Images\invoice.gif" />
+    <Content Include="Images\item.gif" />
+    <Content Include="Images\leads.gif" />
+    <Content Include="Images\leads_maintenance.gif" />
+    <Content Include="Images\ledger_transactions.gif" />
+    <Content Include="Images\Matrix Folder.png" />
+    <Content Include="Images\Matrix Folder_Alt.png" />
+    <Content Include="Images\memorize_memorized.gif" />
+    <Content Include="Images\misc\album_cover.jpg" />
+    <Content Include="Images\misc\autumn.jpg" />
+    <Content Include="Images\misc\bluegrunge.jpg" />
+    <Content Include="Images\misc\firehost.png" />
+    <Content Include="Images\misc\frozen.jpg" />
+    <Content Include="Images\misc\grungeslantstripes.png" />
+    <Content Include="Images\misc\GrungeSunburst.png" />
+    <Content Include="Images\misc\Grunge_Red.png" />
+    <Content Include="Images\misc\leedscastle.jpg" />
+    <Content Include="Images\misc\multicolor.png" />
+    <Content Include="Images\misc\parchment.jpg" />
+    <Content Include="Images\misc\Red_Grunge_Glow.png" />
+    <Content Include="Images\misc\smoke.jpg" />
+    <Content Include="Images\misc\streak.jpg" />
+    <Content Include="Images\misc\sunset.jpg" />
+    <Content Include="Images\misc\wallpaper.jpg" />
+    <Content Include="Images\news.gif" />
+    <Content Include="Images\order.gif" />
+    <Content Include="Images\packing_slip.gif" />
+    <Content Include="Images\payment.gif" />
+    <Content Include="Images\payroll.gif" />
+    <Content Include="Images\people.gif" />
+    <Content Include="Images\pick_list.gif" />
+    <Content Include="Images\post.gif" />
+    <Content Include="Images\problems.gif" />
+    <Content Include="Images\process_payroll.gif" />
+    <Content Include="Images\purchase_order.gif" />
+    <Content Include="Images\quote.gif" />
+    <Content Include="Images\receiving.gif" />
+    <Content Include="Images\reporting_engine.gif" />
+    <Content Include="Images\reports.gif" />
+    <Content Include="Images\return.gif" />
+    <Content Include="Images\return_authorization.gif" />
+    <Content Include="Images\search.gif" />
+    <Content Include="Images\Security\Security.png" />
+    <Content Include="Images\Security\SecurityAlert.png" />
+    <Content Include="Images\Security\SecurityCenter.png" />
+    <Content Include="Images\Security\SecuritySettings.png" />
+    <Content Include="Images\Security\Service Manager.png" />
+    <Content Include="Images\Security\Session Manager.png" />
+    <Content Include="Images\Security\Setup.png" />
+    <Content Include="Images\service_invoice.gif" />
+    <Content Include="Images\service_order.gif" />
+    <Content Include="Images\setup.gif" />
+    <Content Include="Images\shipping.gif" />
+    <Content Include="Images\SLATE TRASH_EMPTY.png" />
+    <Content Include="Images\SLATE TRASH_FULL.png" />
+    <Content Include="Images\SNOW E AQUA DROP BOX.png" />
+    <Content Include="Images\SNOW E AQUA FOLDER.png" />
+    <Content Include="Images\SNOW E AQUA HOME.png" />
+    <Content Include="Images\SNOW E AQUA LIBRARY.png" />
+    <Content Include="Images\SNOW E AQUA LOCKED.png" />
+    <Content Include="Images\SNOW E AQUA PRIVATE.png" />
+    <Content Include="Images\SNOW E AQUA PUBLIC.png" />
+    <Content Include="Images\SNOW E AQUA SHERLOCK.png" />
+    <Content Include="Images\SNOW E AQUA SITES.png" />
+    <Content Include="Images\support.gif" />
+    <Content Include="Images\tax_tables.gif" />
+    <Content Include="Images\topics.gif" />
+    <Content Include="Images\Tritanium\Desktop.png" />
+    <Content Include="Images\Tritanium\TRITANIUM ALIAS FOLDER.png" />
+    <Content Include="Images\Tritanium\TRITANIUM APPLICATIONS FOLDER.png" />
+    <Content Include="Images\Tritanium\TRITANIUM ARROW.png" />
+    <Content Include="Images\Tritanium\TRITANIUM BOOK.png" />
+    <Content Include="Images\Tritanium\TRITANIUM DESKTOP FOLDER.png" />
+    <Content Include="Images\Tritanium\TRITANIUM DESKTOP.png" />
+    <Content Include="Images\Tritanium\TRITANIUM DOCUMENTS FOLDER.png" />
+    <Content Include="Images\Tritanium\TRITANIUM FOLDER.png" />
+    <Content Include="Images\Tritanium\TRITANIUM GENERIC APPLICATION.png" />
+    <Content Include="Images\Tritanium\TRITANIUM HOME FOLDER.png" />
+    <Content Include="Images\Tritanium\TRITANIUM INTERNET DOCUMENT.png" />
+    <Content Include="Images\Tritanium\TRITANIUM INTERNET FOLDER.png" />
+    <Content Include="Images\Tritanium\TRITANIUM LIBRARY FOLDER.png" />
+    <Content Include="Images\Tritanium\TRITANIUM LIBRARY HARDDRIVE.png" />
+    <Content Include="Images\Tritanium\TRITANIUM PENCIL.png" />
+    <Content Include="Images\Tritanium\TRITANIUM PLANET EARTH.png" />
+    <Content Include="Images\Tritanium\TRITANIUM SQUARED DOC LIBRARY.png" />
+    <Content Include="Images\Tritanium\TRITANIUM SQUARED FOLDER DOCUMENTS.png" />
+    <Content Include="Images\Tritanium\TRITANIUM SQUARED FOLDER HOME.png" />
+    <Content Include="Images\Tritanium\TRITANIUM SQUARED FOLDER INTERNET.png" />
+    <Content Include="Images\Tritanium\TRITANIUM SQUARED FOLDER LIBRARY.png" />
+    <Content Include="Images\Tritanium\TRITANIUM SQUARED FOLDER PLAIN.png" />
+    <Content Include="Images\Tritanium\TRITANIUM SQUARED FOLDER SCREWDRIVER.png" />
+    <Content Include="Images\Tritanium\TRITANIUM SQUARED FOLDER UTILITIES.png" />
+    <Content Include="Images\Tritanium\TRITANIUM SQUARED FOLDER WRENCH.png" />
+    <Content Include="Images\Tritanium\TRITANIUM SQUARED FULL DOCUMENT.png" />
+    <Content Include="Images\Tritanium\TRITANIUM SQUARED HOME.png" />
+    <Content Include="Images\Tritanium\TRITANIUM SQUARED INTERNET FOLDER.png" />
+    <Content Include="Images\Tritanium\TRITANIUM SQUARED LIBRARY.png" />
+    <Content Include="Images\Tritanium\TRITANIUM SQUARED PLAIN FOLDER.png" />
+    <Content Include="Images\Tritanium\TRITANIUM SQUARED TRASH EMPTY.png" />
+    <Content Include="Images\Tritanium\TRITANIUM SQUARED TRASH FULL.png" />
+    <Content Include="Images\Tritanium\TRITANIUM SQUARED UTILITIES B FOLDER.png" />
+    <Content Include="Images\Tritanium\TRITANIUM SQUARED UTILITIES FOLDER.png" />
+    <Content Include="Images\Tritanium\TRITANIUM SQUARED UTILITIES.png" />
+    <Content Include="Images\Tritanium\TRITANIUM SQUARED WRENCH.png" />
+    <Content Include="Images\Tritanium\TRITANIUM TOOLS FOLDER.png" />
+    <Content Include="Images\Tritanium\TRITANIUM TRASH FULL.png" />
+    <Content Include="Images\Tritanium\TRITANIUM TRASH.png" />
+    <Content Include="Images\Tritanium\TRITANIUM USERS FOLDER.png" />
+    <Content Include="Images\Tritanium\TRITANIUM UTILITIES FOLDER.png" />
+    <Content Include="Images\un-book.gif" />
+    <Content Include="Images\un-post.gif" />
+    <Content Include="Images\vendors.gif" />
+    <Content Include="Images\vendor_adjustments.gif" />
+    <Content Include="Images\view.gif" />
+    <Content Include="Images\voucher.gif" />
+    <Content Include="Images\warehouse.gif" />
+    <Content Include="Images\withdrawl.gif" />
+    <Content Include="Scripts\jquery-1.6.2-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.6.2.js" />
+    <Content Include="Scripts\jquery-1.6.2.min.js" />
+    <Content Include="Scripts\jquery-ui-1.8.11.js" />
+    <Content Include="Scripts\jquery-ui-1.8.11.min.js" />
+    <Content Include="Scripts\jquery.desktop.js" />
+    <Content Include="Scripts\jquery.tmpl.js" />
+    <Content Include="Scripts\jquery.unobtrusive-ajax.js" />
+    <Content Include="Scripts\jquery.unobtrusive-ajax.min.js" />
+    <Content Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\knockout-2.0.0.debug.js" />
+    <Content Include="Scripts\knockout-2.0.0.js" />
+    <Content Include="Scripts\LazyLoad.js" />
+    <Content Include="Scripts\modernizr-2.0.6-development-only.js" />
+    <Content Include="Content\reset.css" />
+    <Content Include="specwatchr-usage.txt" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Content\Site.css" />
+    <Content Include="Scripts\_references.js" />
+    <Content Include="Scripts\AjaxLogin.js" />
+    <Content Include="Images\accent.png" />
+    <Content Include="Images\aspNetHome.png" />
+    <Content Include="Images\bullet.png" />
+    <Content Include="Images\facebook.png" />
+    <Content Include="Images\findHosting.png" />
+    <Content Include="Images\heroAccent.png" />
+    <Content Include="Images\NuGetGallery.png" />
+    <Content Include="Images\orderedListOne.png" />
+    <Content Include="Images\orderedListTwo.png" />
+    <Content Include="Images\orderedListThree.png" />
+    <Content Include="Images\twitter.png" />
+    <Content Include="Images\windowsLive.png" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Account\ChangePassword.cshtml" />
+    <Content Include="Views\Account\ChangePasswordSuccess.cshtml" />
+    <Content Include="Views\Account\Login.cshtml" />
+    <Content Include="Views\Account\Register.cshtml" />
+    <Content Include="Views\Home\About.cshtml" />
+    <Content Include="Views\Home\Contact.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Custom Icons\AccountsPayable.psd" />
+    <None Include="Images\Custom Icons\AccountsReceivable.psd" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>1228</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

@@ -1,0 +1,5 @@
+c:\apps\.net\DarkNebula\DarkNebula.Infrastructure\bin\Debug\DarkNebula.Infrastructure.dll
+c:\apps\.net\DarkNebula\DarkNebula.Infrastructure\bin\Debug\DarkNebula.Infrastructure.pdb
+c:\apps\.net\DarkNebula\DarkNebula.Infrastructure\obj\Debug\ResolveAssemblyReference.cache
+c:\apps\.net\DarkNebula\DarkNebula.Infrastructure\obj\Debug\DarkNebula.Infrastructure.dll
+c:\apps\.net\DarkNebula\DarkNebula.Infrastructure\obj\Debug\DarkNebula.Infrastructure.pdb

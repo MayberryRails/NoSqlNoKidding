@@ -1,0 +1,5 @@
+<Modules>
+  <Module PersistentId="E850B0FC-9700-4E31-B1E1-9A295C7927B0" ModuleId="DarkNebula" />
+  <Module PersistentId="A35C112B-9798-4CD6-87C3-1061AF727D04" ModuleId="DarkNebula.Infrastructure" />
+  <Module PersistentId="2E1C28E3-290C-4F3B-9AB2-04C79A8E8DDC" ModuleId="DarkNebula.Core" />
+</Modules>
